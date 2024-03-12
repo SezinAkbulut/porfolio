@@ -13,7 +13,7 @@ const darkContainerImg = document.querySelector(
   "#dark-container .home-img img"
 );
 
-darkContainer.src = "assets/img/home-perfil.png";
+darkContainer.src = "assets/img/11.png";
 
 toggleIcons.forEach((toggle) => {
   toggle.addEventListener("click", () => {
@@ -31,8 +31,10 @@ toggleIcons.forEach((toggle) => {
 
     if (cloneContainer.classList.contains("active")) {
       cloneContainer.style.clipPath = "circle(150% at 0 0)";
+      darkContainerImg.src = "assets/img/11.png";
     } else {
       cloneContainer.style.clipPath = "circle(0% at 0 0)";
+      darkContainerImg.src = "assets/img/11.png";
     }
   });
 });
