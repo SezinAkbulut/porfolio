@@ -13,6 +13,8 @@
     />
 
     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -21,13 +23,15 @@
       rel="stylesheet"
     />
 
-    <script defer src="assets/js/script.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+
     <title>Sezin Akbulut Portfolio</title>
   </head>
   <body>
     <div class="container active" id="container">
       <header class="header">
-        <a href="./index.html" class="logo">My Portfolio.</a>
+        <a href="./index.html" class="logo">My Portfolio <span>.</span></a>
 
         <nav class="navbar">
           <a href="./index.html" class="active">Home</a>
@@ -48,7 +52,8 @@
             <h1>Sezin Akbulut</h1>
             <h3>And I'm a <span>Web Developer</span></h3>
             <p>
-              Passionate about creating Web Pages with UI/UX User Interface.
+              Passionate about creating <span>Web Pages</span> with
+              <span>UI/UX User Interface</span>.
             </p>
 
             <div class="social-media">
@@ -70,6 +75,55 @@
           </div>
         </section>
       </main>
+
+      <section class="testimonial section">
+        <h2 class="section__title">
+          What They Say <br />
+          About Me?
+        </h2>
+
+        <div class="testimonial__container">
+          <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="testimonial__card swiper-slide">
+                <div class="testimonial__border">
+                  <img
+                    src="assets/img/basile1.png"
+                    alt="image"
+                    class="testimonial__img"
+                  />
+                </div>
+
+                <h2 class="testimonial__name">Basile Leroy</h2>
+                <p class="testimonial__description">...........</p>
+              </article>
+
+              <article class="testimonial__card swiper-slide">
+                <div class="testimonial__border">
+                  <img src="assets/img/" alt="image" class="testimonial__img" />
+                </div>
+
+                <h2 class="testimonial__name">Erwin Verhamme</h2>
+                <p class="testimonial__description">...........</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="contact section">
+        <div class="contact__container grid">
+          <h2 class="section__title">
+            Let's Talk <br />
+            About Projects
+          </h2>
+
+          <a href="./contact.html" class="btn">Contact Me</a>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="footer__container grid">

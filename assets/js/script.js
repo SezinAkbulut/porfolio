@@ -38,3 +38,17 @@ toggleIcons.forEach((toggle) => {
     }
   });
 });
+
+/*=============== SWIPER TESTIMONIAL ===============*/
+// Initialize Swiper with the correct class name
+const swiperTestimonial = new Swiper(".testimonial__swiper", {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+});

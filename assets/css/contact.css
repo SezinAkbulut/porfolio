@@ -138,6 +138,9 @@ a {
   font-weight: 600;
   margin-right: auto;
 }
+.logo span {
+  color: #f1a10b;
+}
 
 .navbar a {
   font-size: 18px;
@@ -308,6 +311,7 @@ a {
 /*=============== FOOTER ===============*/
 .footer {
   background-color: #f1a10b;
+  z-index: 10;
 }
 
 .footer__container {
@@ -329,6 +333,7 @@ a {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   justify-self: center;
+  color: #f1a10b;
 }
 
 .footer__links,
