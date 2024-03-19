@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -42,7 +43,7 @@
 
 .navbar a:hover,
 .navbar a.active {
-  color: #2e97a1;
+  color: #f1a10b;
 }
 
 .toggle-icon {
@@ -76,7 +77,7 @@
 }
 
 .home-content h3 span {
-  color: #2e97a1;
+  color: #f1a10b;
 }
 
 .home-content p {
@@ -85,8 +86,9 @@
 }
 
 .home-content img.tools {
-  width: 50px;
-  height: 30px;
+  width: 70px;
+  height: 50px;
+  padding: 5px;
 }
 
 .social-media a {
@@ -96,25 +98,25 @@
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #2e97a1;
+  border: 2px solid #f1a10b;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: 25px;
-  color: #2e97a1;
+  color: #f1a10b;
   margin: 5px 15px 25px 0;
   transition: 0.5s;
 }
 
 .social-media a:hover {
   color: #f0f3fd;
-  background: #2e97a1;
+  background: #f1a10b;
 }
 
 .btn {
   display: inline-block;
   padding: 11px 32px;
-  background: #2e97a1;
-  border: 2px solid #2e97a1;
+  background: #f1a10b;
+  border: 2px solid #f1a10b;
   border-radius: 40px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
   color: #f0f3fd;
@@ -123,7 +125,7 @@
 }
 
 .btn:hover {
-  color: #37a1f2;
+  color: #f1a10b;
   background: transparent;
 }
 
@@ -151,7 +153,7 @@
 
 #dark-container .navbar a:hover,
 #dark-container .navbar a.active {
-  color: #37a1f2;
+  color: #f1a10b;
 }
 
 #container,
@@ -166,4 +168,54 @@
   clip-path: circle(150% at 0 0);
   transition: 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0s;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 10% 0;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 32px;
+  color: #f1a10b;
+}
+
+.about-content span {
+  color: #f1a10b;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.about-img img {
+  position: absolute;
+  bottom: 16rem;
+  right: 8rem;
+  width: 25%;
+  pointer-events: none;
+  border-radius: 80% 50% 70% 50%;
+  background-color: #f1a10b;
+  padding-top: 1rem;
+}
+
+.about-content img.tools {
+  width: 70px;
+  height: 50px;
+  padding: 5px;
+}
+
+.skills {
+  max-width: 450px;
 }

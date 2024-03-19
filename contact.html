@@ -5,39 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
     <link
       rel="shortcut icon"
       href="assets/img/favicon copy.png"
       type="image/x-icon"
     />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
-
-    <!--=============== CSS ===============-->
-
     <link rel="stylesheet" href="./assets/css/contact.css" />
 
-    <!--=============== BOXICONS ===============-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <script defer src="assets/js/contact.js"></script>
+    <script defer src="./assets/js/contact.js"></script>
+
     <title>Sezin Akbulut Portfolio</title>
   </head>
   <body>
     <div class="container active" id="container">
-      <!--==================== HEADER ====================-->
       <header class="header">
-        <a href="#" class="logo">My Portfolio.</a>
+        <a href="./index.html" class="logo">My Portfolio.</a>
 
         <nav class="navbar">
           <a href="./index.html" class="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
+          <a href="./aboutme.html">About</a>
           <a href="./portfolio.html">Portfolio</a>
           <a href="./contact.html">Contact</a>
         </nav>
@@ -47,22 +39,81 @@
         </div>
       </header>
 
-      <!--==================== MAIN ====================-->
       <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section">
-          <div class="home-content">
-            <h3>Hello, It's me</h3>
-            <h1>Sezin Akbulut</h1>
-            <h3>And I'm a <span>Web Developer</span></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              magnam doloribus minima non praesentium nihil, et delectus esse
-              placeat amet repudiandae ratione quaerat unde asperiores, quam eos
-              consequatur eveniet. Deserunt.
-            </p>
+        <section class="contact section">
+          <h2 class="section__title">Let's Talk</h2>
 
-            <div class="social-media">
+          <div class="contact__page container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+              <div class="contact__group grid">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_name"
+                    id="name"
+                    required
+                    placeholder="Write your name"
+                    class="contact__input"
+                  />
+                  <label for="name" class="contact__label">First Name</label>
+                </div>
+
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="email"
+                    required
+                    placeholder="Write your email"
+                    class="contact__input"
+                  />
+                  <label for="email" class="contact__label"
+                    >Email Address</label
+                  >
+                </div>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  required
+                  placeholder="Write your message"
+                  class="contact__input"
+                ></textarea>
+                <label for="message" class="contact__label">Message</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="btn" id="send-message">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <div class="footer__content grid">
+            <a href="index.html" class="footer__logo">My portfolio.</a>
+
+            <ul class="footer__links">
+              <li>
+                <a href="aboutme.html" class="footer__link">About Me</a>
+              </li>
+
+              <li>
+                <a href="portfolio.html" class="footer__link">Portfolio</a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="footer__link">Contact Me</a>
+              </li>
+            </ul>
+
+            <div class="footer__social">
               <a href="https://www.linkedin.com/in/sezin-akbulut"
                 ><i class="bx bxl-linkedin-square"></i
               ></a>
@@ -70,27 +121,13 @@
                 ><i class="bx bxl-github"></i
               ></a>
             </div>
-
-            <a href="./assets/pdf/Sezin_Akbulut_CV.pdf" class="btn" download
-              >Download CV</a
-            >
           </div>
 
-          <div class="home-img">
-            <img src="./assets/img/11.png" alt="" />
-          </div>
-        </section>
-
-        <section class="services section"></section>
-
-        <section class="work section"></section>
-
-        <section class="testimonial section"></section>
-
-        <section class="contact section"></section>
-      </main>
-
-      <footer class="footer"></footer>
+          <span class="footer__copy">
+            &#169; All Rights Reserved By Sezin Akbulut
+          </span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
